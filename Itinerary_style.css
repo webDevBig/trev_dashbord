@@ -1,0 +1,695 @@
+.containr {
+/*    width: 100%;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 0 0;
+    font-weight: 400;
+}
+
+.listOfTrip {
+    list-style: none;
+    width: 19%;
+    font-size: 0.94em;
+    color: #444;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    line-height: 2.5;
+    cursor: pointer;
+}
+
+.listOfTrip li a {
+    transition: all .3s;
+    color: #444;
+    text-decoration: none;
+}
+
+.listOfTrip li a:hover,
+.listOfTrip li a:active {
+    color: #9c3bff;
+}
+
+.listOfTrip i {
+    width: 17px;
+    margin: 0 8px 0 0;
+}
+
+.listOfTrip i::before {
+    width: 17px;
+}
+
+.itinerary_box {
+    width: 81%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.header_itinerary {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    margin: 0 0 20px;
+}
+
+.header_itinerary h1 {
+    color: #444;
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+
+.header_itinerary h1 i {
+    border-radius: 50%;
+    background-color: #f6b7a0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    font-size: 0.5em;
+    padding: 0;
+    font-weight: 900;
+    transition: all .3s;
+    margin: 0 0 0 20px;
+}
+
+.header_itinerary .right_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #444;
+    font-size: 1em;
+}
+
+.header_itinerary .right_box p {
+    margin: 0 20px 0 0;
+}
+
+.header_itinerary .right_box i {
+    margin: 0 10px 0 0;
+}
+
+.header_itinerary .right_box span {
+    color: #787878;
+    font-style: italic;
+}
+
+.header_itinerary .btn_box {
+    display: flex;
+    align-items: center;
+}
+
+.header_itinerary .btn_box .white_btn {
+    background-color: white;
+    border: 1px solid #d7dcde;
+    border-radius: 5px;
+    font-size: 1em;
+    text-align: center;
+    padding: 6px 0;
+    width: 130px;
+    margin: 0 16px 0 0;
+    color: #444;
+}
+
+.header_itinerary .btn_box .gray_btn {
+    background-color: #9fa1cc;
+    border: 1px solid #9fa1cc;
+    border-radius: 5px;
+    font-size: 1em;
+    text-align: center;
+    padding: 6px 0;
+    width: 130px;
+    color: white;
+}
+
+.white_box {
+    width: 74%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, .25), 0 0px 10px rgba(0, 0, 0, .22);
+    padding: 0 30px 20px 20px;
+    border-radius: 8px;
+}
+
+.white_box .header_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 22px;
+}
+
+.white_box .header_box h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    color: #444;
+    margin: 0;
+    font-weight: 400;
+}
+
+.or_circle {
+    border-radius: 50%;
+    background-color: #f6b7a0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    font-size: 0.94em;
+    padding: 0;
+    font-weight: 900;
+    transition: all .3s;
+    margin: 0 0 0 20px;
+}
+
+.or_circle:hover {
+    color: white;
+    background-color: #e69b7f;
+}
+
+.day_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-top: 1px solid #c8c9e4;
+    position: relative;
+    padding-top: 20px;
+}
+
+.day_box:first-of-type {
+    border: none;
+}
+
+.day_box .date {
+    text-transform: uppercase;
+    color: #444;
+    font-size: 0.94em;
+    width: 26px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin: 0;
+    line-height: 1.1;
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+
+.day_box .date span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.day_info {
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-top: 1px solid #c8c9e4;
+    margin: 0 0 20px 28px;
+    padding-top: 13px;
+}
+
+.day_info:first-of-type {
+    border: none;
+    padding-top: 0;
+}
+
+
+.depart_info {
+    color: #9c3bff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+}
+
+.depart_info i {
+    margin: 0 3px 0 0;
+}
+
+.day_info .table {
+    color: #444;
+    font-size: 0.75em;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    margin: 0 0 0 17px;
+    width: 100%;
+}
+
+.day_info .table th {
+    color: #444;
+    font-style: italic;
+}
+
+.day_info .table td {
+    color: black;
+}
+
+.day_info .table > :not(caption) > * > * {
+    padding: 0 .5em;
+}
+
+.day_info .table tbody,
+.day_info .table td,
+.day_info .table th,
+.day_info .table thead,
+.day_info .table tr {
+    border-style: none;
+}
+
+.day_info .text {
+    font-size: 0.75em;
+    color: black;
+    font-family: "Raleway", sans-serif;
+    padding-left: 22px;
+    margin: 10px 0 0;
+}
+
+.downloadBox {
+    width: 190px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #d7dcde;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.75em;
+    color: black;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    margin: 1em 0 0 20px;
+}
+
+.downloadBox .fa-paperclip {
+    height: 100%;
+    background-color: #f1eff7;
+    width: 40px;
+    border-right: 1px solid #d7dcde;
+    color: #444;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.downloadBox p {
+    margin: 0;
+}
+
+.downloadBox a {
+    color: #444;
+    text-decoration: none;
+    margin: 0 5px 0 0;
+}
+
+.downloadBox a i {
+    font-size: 9px;
+    margin: 0 5px 0 0;
+}
+
+.downloadBox div {
+    padding-left: 10px;
+}
+
+.fa-trash-o::before {
+    content: "\f014";
+}
+
+.travelInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 0.94em;
+    color: #444;
+    padding-left: 22px;
+}
+
+.travelInfo div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.travelInfo div div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.travelInfo span {
+    color: #787878;
+    font-style: italic;
+    width: 100px;
+    margin: 0 10px 0 0;
+}
+
+.travelInfo p {
+    margin: 0;
+}
+
+.img_box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 16px 0 0 22px;
+}
+
+.img_box .img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px 20px 20px 0;
+}
+
+.summaryBox {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, .25), 0 0px 10px rgba(0, 0, 0, .22);
+    padding: 15px 10px 20px 20px;
+    border-radius: 8px;
+}
+#summaryModal .summaryBox
+{
+    padding: 15px 20px 20px;
+}
+
+.summaryBox h1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1em;
+    color: #444;
+    font-family: 'PT Serif', sans-serif;
+    margin: 0;
+}
+
+.summaryBox .titleLine {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-transform: uppercase;
+}
+
+.summaryBox .titleLine i.or_circle {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    font-size: 8px;
+}
+
+.summaryBox .titleLine p {
+    margin: 0 7px;
+}
+
+.accordion {
+    font-size: 0.94em;
+    color: #444;
+    font-family: "Poppins", sans-serif;
+}
+
+.summaryBox .accordion-button {
+    padding: 10px 10px 0px 0;
+    border: none;
+    color: #444;
+}
+
+.accordion-button::after {
+    width: 0.56rem;
+    height: 0.56rem;
+    background-size: 0.56rem;
+    content: "";
+    background-image: url(img/chevron-down-solid.svg);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(img/chevron-down-solid.svg);
+    transform: rotate(90deg);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: white;
+}
+
+.accordion-body {
+    margin: 0 10px 8px 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid #c8c9e4;
+}
+
+.accordion-item .table {
+    color: #787878;
+    font-size: 0.94em;
+    font-family: "Raleway", sans-serif;
+    cursor: pointer;
+    margin: 0;
+}
+
+.accordion-item .table tr {
+    border: none;
+    transition: all .3s;
+
+}
+
+.accordion-item .table tr:hover {
+    color: #010101;
+}
+
+.accordion-item .table .sum {
+    text-align: right;
+}
+
+.accordion-item .table .hotel i {
+    margin: 0 5px 0 0;
+}
+
+.accordion-item .table > :not(caption) > * > * {
+    padding: 0;
+    border-bottom-width: 0;
+}
+
+.accordion-item:last-of-type .accordion-collapse {
+    border-radius: 0;
+    border-bottom: none;
+}
+
+.accordion .total {
+    font-size: 0.75em;
+    padding: 2px 10px 10px 0;
+    margin: 0;
+    border-bottom: 1px solid #c8c9e4;
+    text-align: right;
+}
+
+.accordion .total span {
+    margin-left: 5px;
+}
+
+.totalTable {
+    font-size: 0.75em;
+    color: #444;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.totalTable > :not(caption) > * > * {
+    padding: 2px 0;
+}
+
+.totalTable tr {
+    border-color: #c8c9e4
+}
+
+.Grandtotal {
+    font-size: 0.94em;
+    padding: 2px 0 10px;
+    margin: 0;
+    color: #9c3bff;
+    border-bottom: 1px solid #c8c9e4;
+    text-align: right;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+}
+
+.Grandtotal span {
+    font-size: 1em;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    margin: 0 0 0 30px;
+}
+
+.sumBtnBox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 20px 0 0;
+}
+
+.sumBtnBox button {
+    font-size: 0.94em;
+    color: #444;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 5px 5px;
+    width: 100px;
+    border: 1px solid #d7dcde;
+    border-radius: 5px;
+    outline: none;
+    background-color: #f1eff7;
+    box-sizing: border-box;
+    padding: 3px 0;
+    cursor: pointer;
+}
+
+.sumBtnBox .gray_btn {
+    color: white;
+    background-color: #9fa1cc;
+    border-color: #9fa1cc;
+}
+
+.sumBtnBox .purple_btn {
+    color: white;
+    background: #8739f6;
+    background: linear-gradient(145deg, #8739f6 15%, #a849fc 65%);
+    border: none;
+    padding: 4px 0;
+}
+
+#summaryModal .summaryBox {
+    width: 100%;
+}
+#summaryModal .or_circle
+{
+    font-size: 0.5em;
+}
+
+#summaryModal h1 {
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+}
+
+.modal-dialog {
+    max-width: 815px;
+}
+
+#summaryModal .table {
+    font-size: 1em;
+}
+
+#summaryModal .totalTable {
+    width: 30%;
+    margin: 0 0 0 auto;
+}
+
+#summaryModal .total {
+    font-size: 1em;
+}
+
+#summaryModal .sumBtnBox {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 95%;
+}
+
+#summaryModal .Grandtotal {
+    font-size: 18px;
+    padding: 10px 0;
+    width: 100%;
+}
+
+#summaryModal .sumBtnBox button {
+    margin: 0 2px 5px;
+}
+
+#summaryModal .totalBox {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+    padding: 10px 0 0;
+    margin: 0 auto;
+}
+
+#summaryModal .totalBox .disc {
+    font-style: italic;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#summaryModal .totalBox .disc span {
+    font-weight: 600;
+    font-style: normal;
+    margin: 0 8px 0 15px;
+}
+
+#summaryModal .fa-pen {
+    width: 16px;
+    height: 16px;
+    font-size: 8px;
+    margin: -2px 0 0;
+}
+
+#summaryModal .totalBox .total {
+    border: none;
+    padding: 0;
+}
+
+#summaryModal .accordion-button {
+    border-bottom: 1px solid #c8c9e4;
+    padding: 10px 0px 10px 0;
+}
+
+#summaryModal .accordion-body {
+    margin: 0;
+    padding: 0;
+}
+
+#summaryModal .accordion-item .table > :not(caption) > * > * {
+    padding: 10px;
+}
+
+#summaryModal .accordion-item .table .date i {
+    margin: 0 5px 0 0;
+}
+
+#summaryModal .table-striped > tbody > tr:nth-of-type(odd) {
+    --bs-table-accent-bg: #f1eff7;
+    color: #444;
+}

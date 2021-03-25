@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Font Awesome Icons -->
+    <!--    <link rel="stylesheet" href="/fontawesome-free/css/all.min.css">-->
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+
+
+    <link rel="stylesheet" href="dash_main.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="white_box">
+                <div class="header_box">
+                    <h1>June Leaderboard</h1>
+                    <i class="fa fa-expand-alt or_circle"></i>
+                </div>
+
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="font-weight: 400">Position</th>
+                            <th scope="col" style="font-weight: 400">Name</th>
+                            <th scope="col" style="font-weight: 400">Leads</th>
+                            <th scope="col" style="font-weight: 400">Guests</th>
+                            <th scope="col" style="font-weight: 400">Monthly<br> Commission Points</th>
+                            <th scope="col" style="font-weight: 400">Daily<br> Commission Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" style="font-weight: 400">1</th>
+                            <td>Mark</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>188.50</td>
+                            <td>15.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="font-weight: 400">2</th>
+                            <td>Mark</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>188.50</td>
+                            <td>15.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="font-weight: 400">3</th>
+                            <td>Mark</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>188.50</td>
+                            <td>15.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="font-weight: 400">4</th>
+                            <td>Mark</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>188.50</td>
+                            <td>15.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="font-weight: 400">5</th>
+                            <td>Mark</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>188.50</td>
+                            <td>15.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a>View More</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="toDoListBox">
+                <h1 class="toDoHeader">To Do</h1>
+                <div class="todolist not-done">
+                    <div class="modal fade" id="addList" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <input type="text" class="form-control add-todo" placeholder="Add todo">
+                            </div>
+                        </div>
+                    </div>
+                    <ul id="sortable" class="list-unstyled">
+                        <li class="ui-state-default">
+                            <div class="checkbox">
+                                <div class="list">
+                                    <label>
+                                        <input type="checkbox" /></label>
+                                    <p>Call John Smith on 0408 880 800
+                                        regarding membership.
+                                        He was looking to upgrade to Ultra</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ui-state-default">
+                            <div class="checkbox">
+                                <div class="list">
+                                    <label>
+                                        <input type="checkbox" /></label>
+                                    <p>Call John Smith.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ui-state-default">
+                            <div class="checkbox">
+                                <div class="list">
+                                    <label>
+                                        <input type="checkbox" /></label>
+                                    <p>Check up with Neil to see if he wants to upgrade to a 5th night stay </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ui-state-default">
+                            <div class="checkbox">
+                                <div class="list">
+                                    <label>
+                                        <input type="checkbox" /></label>
+                                    <p>URGENT - Call Susie </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="redoBox">
+                    <i class="fas fa-pen"></i>
+                    <i class="fas fa-plus btn" data-bs-toggle="modal" data-bs-target="#addList"></i>
+                </div>
+            </div>
+            <div class="toDoListBox">
+                <h1 class="toDoHeader">Completed</h1>
+                <div class="todolist">
+                    <ul id="done-items" class="list-unstyled">
+                        <li>
+                            <div class="checkbox">
+                                <div class="list">
+                                    <input type="checkbox" checked />
+                                    <label></label>
+                                    <p>Call John Smith on 0408 880 800
+                                        regarding membership.
+                                        He was looking to upgrade to Ultra</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="redoBox">
+                    <i class="fas fa-pen"></i>
+                    <i class="fas fa-plus btn" data-bs-toggle="modal" data-bs-target="#addList"></i>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="white_box">
+                <div class="header_box">
+                    <h1>Enquires over Time</h1>
+                    <i class="fa fa-expand-alt or_circle"></i>
+                </div>
+                <div class="info_text">
+                    <div>
+                        <p class="purple_text">1,256</p>
+                        <p>Enquires this Year</p>
+                    </div>
+                    <div>
+                        <p class="purple_text"><i class="fa fa-arrow-up" aria-hidden="true"></i>12%</p>
+                        <p>Since last Week</p>
+                    </div>
+                </div>
+                <div class="ct-chart"></div>
+                <div class="info_grid">
+                   <p><i class="fa fa-circle" aria-hidden="true" style="color: #9c3bff"></i>This Week</p>
+                   <p><i class="fa fa-circle" aria-hidden="true" style="color: #f6b7a0"></i>Last Week</p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="white_box">
+                 <div class="header_box">
+                    <h1>Sales over Time</h1>
+                    <i class="fa fa-expand-alt or_circle"></i>
+                </div>
+                <div class="info_text">
+                    <div>
+                        <p class="purple_text">$18,230.86</p>
+                        <p>Sales this Year</p>
+                    </div>
+                    <div>
+                        <p class="purple_text"><i class="fa fa-arrow-up" aria-hidden="true"></i>23%</p>
+                        <p>Since last Month</p>
+                    </div>
+                </div>
+                <div class="ct-chart ct-bar"></div>
+                <div class="info_grid">
+                   <p><i class="fa fa-circle" aria-hidden="true" style="color: #9c3bff"></i>This Year</p>
+                   <p><i class="fa fa-circle" aria-hidden="true" style="color: #f6b7a0"></i>Last Year</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script src="to_do.js"></script>
+    <script>
+        var myModal = new bootstrap.Modal(document.getElementById('addList'), {
+            keyboard: true
+        });
+
+    </script>
+</body>
+
+</html>

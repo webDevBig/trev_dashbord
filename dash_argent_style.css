@@ -1,0 +1,101 @@
+th:nth-of-type(2),
+td:nth-of-type(2) {
+    text-align: left;
+}
+
+.table tbody {
+    border-bottom: none;
+}
+
+.box {
+    flex-wrap: wrap;
+}
+
+.ct-series-a .ct-area,
+.ct-series-a .ct-slice-donut-solid,
+.ct-series-a .ct-slice-pie {
+    fill: #babdbf;
+}
+
+.ct-series-b .ct-area,
+.ct-series-b .ct-slice-donut-solid,
+.ct-series-b .ct-slice-pie {
+    fill: #9f3efe;
+}
+
+.toDoListBox {
+    margin: 0 0 15px;
+}
+
+.chartBox {
+    background-color: white;
+    height: 140px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 48%;
+    display: flex;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, .25), 0 0px 10px rgba(0, 0, 0, .22);
+    padding: 15px;
+    border-radius: 8px;
+    position: relative;
+    margin: 0 0 15px;
+}
+
+.ct-donut,
+.ct-donut2,
+.ct-donut3,
+.ct-donut4 {
+    width: 95px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.chartBox .info_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    /*    height: 100%;*/
+    margin: 0;
+}
+
+.chartBox .top {
+    position: absolute;
+    bottom: 12px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+
+.chartBox hr {
+    width: 100%;
+    height: 1px;
+    background-color: #444;
+    margin: 5px 0;
+}
+
+.chartBox .info_text p {
+    margin: 0;
+    font-size: 1em;
+    color: #444;
+    text-align: center;
+}
+
+.chartBox .info_text .purple_text {
+    margin: 0;
+    font-size: 24px;
+    color: #9c3bff;
+}
+
+.chartBox a {
+    margin: 0;
+    font-size: 10px;
+    color: #444;
+    text-transform: uppercase;
+}

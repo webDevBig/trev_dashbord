@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Font Awesome Icons -->
+
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <link href="summernote-0.8.18-dist/summernote-bs4.min.css" rel="stylesheet">
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="upload.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="datepiker/bootstrap-datetimepicker.min.css">
+
+
+    <link rel="stylesheet" href="Itinerary_style.css">
+    <link rel="stylesheet" href="createTour_style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="containr">
+        <ul class="listOfTrip">
+            <li><a data-bs-toggle="modal" data-bs-target="#tripCreateModal" class="accommodation"><i class="fas fa-bed"></i>Accommodation</a></li>
+            <li><a data-bs-toggle="modal" data-bs-target="#tripCreateModal" class="flights"><i class="fa fa-plane" aria-hidden="true"></i> flights</a></li>
+            <li><a data-bs-toggle="modal" data-bs-target="#tripCreateModal" class="transfers"><i class="fas fa-exchange-alt"></i> transfers</a></li>
+            <li><a data-bs-toggle="modal" data-bs-target="#tripCreateModal" class="cruise"><i class="fas fa-anchor"></i> cruise</a></li>
+            <li><a data-bs-toggle="modal" data-bs-target="#tripCreateModal" class="activity"><i class="fas fa-hiking"></i> activities</a></li>
+            <li><a data-bs-toggle="modal" data-bs-target="#tripCreateModal" class="tour"><i class="fas fa-map-marked-alt"></i> tour</a></li>
+            <li><a data-bs-toggle="modal" data-bs-target="#tripCreateModal" class="extras"><i class="fas fa-plus-square"></i> extras</a></li>
+            <li><a data-bs-toggle="modal" data-bs-target="#tripCreateModal" class="documents"><i class="fas fa-passport"></i> documents</a></li>
+            <li><a href=""><i class="fas fa-folder-open"></i> load from library</a></li>
+        </ul>
+        <div class="itinerary_box">
+            <div class="header_itinerary">
+                <h1>New Trip <i class="fas fa-pen"></i></h1>
+                <div class="right_box">
+                    <p><i class="far fa-calendar-alt"></i>8 Jun, 2020 - 28 Jun 2020 <span>Duration:</span> 20 Days</p>
+                    <div class="btn_box">
+
+                        <button class="white_btn"><i class="fa fa-suitcase" aria-hidden="true"></i> Itinerary</button>
+                        <button class="gray_btn"><i class="fa fa-suitcase" aria-hidden="true"></i> Quote</button>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: space-between;align-items: flex-start">
+                <div class="white_box">
+                    <div class="day_box">
+                        <p class="date">JUN <span>8</span></p>
+                        <div class="day_info">
+                            <div class="header_box">
+                                <h1>Depart Gold Coast - Arrive Singapore</h1>
+                                <i class="fas fa-pen or_circle"></i>
+                            </div>
+                            <p class="depart_info"><i class="fa fa-plane" aria-hidden="true"></i> Depart 10:30 aest, virgin australia flight va513</p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" style="font-weight: 400">Booked with</th>
+                                        <th scope="col" style="font-weight: 400">Confirmation #</th>
+                                        <th scope="col" style="font-weight: 400">Airline</th>
+                                        <th scope="col" style="font-weight: 400">Flight Number</th>
+                                        <th scope="col" style="font-weight: 400">Terminal</th>
+                                        <th scope="col" style="font-weight: 400">Gate</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Virgin Australia</td>
+                                        <td>5895698413</td>
+                                        <td>Virgin Australia</td>
+                                        <td>VA513</td>
+                                        <td>F</td>
+                                        <td>F14</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="text">Check-in for your flight online via desktop, tablet or mobile devices using our Online Check-in portal. Online Check-in will open 48 hours prior to your scheduled flight departure, and close 45 minutes prior.* Please drop your bag at least 45 minutes prior to your scheduled departure time. All guests travelling on our domestic network are permitted to take up to 7kg of carry-on baggage on board. </p>
+                        </div>
+
+                        <div class="day_info">
+                            <div class="header_box">
+                                <h1>Depart Singapore - Arrive Paris</h1>
+                                <i class="fas fa-pen or_circle"></i>
+                            </div>
+                            <p class="depart_info"><i class="fa fa-plane" aria-hidden="true"></i> Depart 14:30 aest, singapore airlines flight sng846</p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" style="font-weight: 400">Booked with</th>
+                                        <th scope="col" style="font-weight: 400">Confirmation #</th>
+                                        <th scope="col" style="font-weight: 400">Airline</th>
+                                        <th scope="col" style="font-weight: 400">Flight Number</th>
+                                        <th scope="col" style="font-weight: 400">Terminal</th>
+                                        <th scope="col" style="font-weight: 400">Gate</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Virgin Australia</td>
+                                        <td>5895698413</td>
+                                        <td>Virgin Australia</td>
+                                        <td>VA513</td>
+                                        <td>F</td>
+                                        <td>F14</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="day_box">
+                        <p class="date">JUN <span>10</span></p>
+                        <div class="day_info">
+                            <div class="header_box">
+                                <h1>Arrive Paris, Airport transfer to Marriott Rive Gauche Hotel & Confe...</h1>
+                                <i class="fas fa-pen or_circle"></i>
+                            </div>
+                            <p class="depart_info"><i class="fas fa-exchange-alt"></i> 7:15 local time, transfer to Marriott Rive Gauche Hotel & Conference Center</p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" style="font-weight: 400">Booked with</th>
+                                        <th scope="col" style="font-weight: 400">Confirmation #</th>
+                                        <th scope="col" style="font-weight: 400">Pickup Address</th>
+                                        <th scope="col" style="font-weight: 400">Drop off Address</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Virgin Australia</td>
+                                        <td>5895698413</td>
+                                        <td>Airport Terminal J, Taxi Rank</td>
+                                        <td>17 Boulevard Saint-Jacques, 75014 Paris</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="downloadBox">
+                                <i class="fa fa-paperclip" aria-hidden="true"></i>
+                                <div>
+                                    <p class="nameOfFile">Transfer Voucher.pdf</p>
+                                    <a href="" download><i class="fa fa-download" aria-hidden="true"></i>Download</a>
+                                    <a href=""><i class="fa fa-trash" aria-hidden="true"></i>Delete</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="day_info">
+                            <div class="header_box">
+                                <h1>Paris Marriott Rive Gauche Hotel & Conference Center</h1>
+                                <i class="fas fa-pen or_circle"></i>
+                            </div>
+                            <p class="depart_info"><i class="fa fa-bed" aria-hidden="true"></i> 8:30 local time, early check in, Paris Marriott Rive Gauche Hotel & Conference Center</p>
+                            <div class="travelInfo">
+                                <div>
+                                    <div>
+                                        <span>Address:</span>
+                                        <p>17 Boulevard Saint-Jacques, 75014 Paris, France</p>
+                                    </div>
+                                    <div>
+                                        <span>Reservation:</span>
+                                        <p>View Room with extra single bed</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <span style="width: auto">Phone:</span>
+                                        <p> +33 1 40 78 79 80</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text">Surrounded by diverse attractions, Paris Marriott Rive Gauche Hotel is a stylish haven in an iconic travel destination. Unwind in 4-star accommodations with first-class amenities, contemporary essentials, spacious floor plans and gorgeous views of the beautiful Paris cityscape in select rooms. Explore legendary attractions, including the Panthéon, Denfert-Rochereau, Luxembourg Gardens, the Catacombs.</p>
+                            <div class="img_box">
+                                <div class="img" style="background-image: url(img/a-room-at-the-beach.jpg)"></div>
+                                <div class="img" style="background-image: url(img/a-room-at-the-beach.jpg)"></div>
+                                <div class="img" style="background-image: url(img/a-room-at-the-beach.jpg)"></div>
+                                <div class="img" style="background-image: url(img/a-room-at-the-beach.jpg)"></div>
+                                <div class="img" style="background-image: url(img/a-room-at-the-beach.jpg)"></div>
+                            </div>
+                        </div>
+
+                        <div class="day_info">
+                            <div class="header_box">
+                                <h1>Morning Lourve Tour</h1>
+                                <i class="fas fa-pen or_circle"></i>
+                            </div>
+                            <p class="depart_info"><i class="fas fa-hiking"></i> 10:00 local time, Musée du Louvre</p>
+                            <div class="travelInfo">
+                                <div>
+                                    <div>
+                                        <span>Address:</span>
+                                        <p>Rue de Rivoli, 75001 Paris, France</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text">The Louvre, or the Louvre Museum, is the world's largest art museum and a historic monument in Paris, France. A central landmark of the city, it is located on the Right Bank of the Seine in the city's 1st arrondissement. </p>
+
+                            <div class="downloadBox">
+                                <i class="fa fa-paperclip" aria-hidden="true"></i>
+                                <div>
+                                    <p class="nameOfFile">Tour Ticket.pdf</p>
+                                    <a href="" download><i class="fa fa-download" aria-hidden="true"></i>Download</a>
+                                    <a href=""><i class="fa fa-trash" aria-hidden="true"></i>Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="summaryBox">
+                    <h1>Summary<i class="fa fa-expand or_circle" data-bs-toggle="modal" data-bs-target="#summaryModal"></i></h1>
+                    <div class="accordion accordion-flush" id="accordionSummaryAccommodation">
+                        <div class="accordion-item">
+                            <div class="titleLine accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" id="flush-headingOne">
+                                <i class="fas fa-bed"></i>
+                                <p>Accommodation</p>
+                                <i class="fas fa-pen or_circle"></i>
+                            </div>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionSummaryAccommodation">
+                                <div class="accordion-body">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="hotel"> <i class="far fa-calendar-alt"></i>Marriot, Paris</td>
+                                                <td class="sum">$1,677.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hotel"><i class="far fa-calendar-alt"></i> Interconti.., Rome</td>
+                                                <td class="sum">$560.99</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hotel"><i class="far fa-calendar-alt"></i> Accor, Madrid</td>
+                                                <td class="sum">$549.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hotel"><i class="far fa-calendar-alt"></i> Marriot, Singapo..</td>
+                                                <td class="sum">$1,649.99</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="total">TOTAL <span>$3,677.98</span></p>
+                    </div>
+                    <div class="accordion accordion-flush" id="accordionSummaryFlights">
+                        <div class="accordion-item">
+                            <div class="titleLine accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne" id="flush-headingTwo">
+                                <i class="fas fa-plane"></i>
+                                <p>Flights</p>
+                                <i class="fas fa-pen or_circle"></i>
+                            </div>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionSummaryFlights">
+                                <div class="accordion-body">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="hotel"> <i class="far fa-calendar-alt"></i>Marriot, Paris</td>
+                                                <td class="sum">$1,677.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hotel"><i class="far fa-calendar-alt"></i> Interconti.., Rome</td>
+                                                <td class="sum">$560.99</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hotel"><i class="far fa-calendar-alt"></i> Accor, Madrid</td>
+                                                <td class="sum">$549.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hotel"><i class="far fa-calendar-alt"></i> Marriot, Singapo..</td>
+                                                <td class="sum">$1,649.99</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="total"><span>$3,677.98</span></p>
+                    </div>
+                    <div class="accordion accordion-flush" id="accordionSummaryTransfers">
+                        <div class="accordion-item">
+                            <div class="titleLine accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseOne" id="flush-headingThree">
+                                <i class="fas fa-exchange-alt"></i>
+                                <p>transfers</p>
+                                <i class="fas fa-pen or_circle"></i>
+                            </div>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionSummaryTransfers">
+                                <div class="accordion-body">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="hotel"> <i class="far fa-calendar-alt"></i>Marriot, Paris</td>
+                                                <td class="sum">$1,677.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hotel"><i class="far fa-calendar-alt"></i> Interconti.., Rome</td>
+                                                <td class="sum">$560.99</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hotel"><i class="far fa-calendar-alt"></i> Accor, Madrid</td>
+                                                <td class="sum">$549.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hotel"><i class="far fa-calendar-alt"></i> Marriot, Singapo..</td>
+                                                <td class="sum">$1,649.99</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="total"><span>$3,677.98</span></p>
+                    </div>
+                    <div class="accordion accordion-flush" id="accordionSummaryActivities">
+                        <div class="accordion-item">
+                            <div class="titleLine accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseOne" id="flush-headingFour">
+                                <i class="fas fa-hiking"></i>
+                                <p>Activities</p>
+                                <i class="fas fa-pen or_circle"></i>
+                            </div>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionSummaryActivities">
+                                <div class="accordion-body">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="hotel"> <i class="far fa-calendar-alt"></i>Marriot, Paris</td>
+                                                <td class="sum">$1,677.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hotel"><i class="far fa-calendar-alt"></i> Interconti.., Rome</td>
+                                                <td class="sum">$560.99</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hotel"><i class="far fa-calendar-alt"></i> Accor, Madrid</td>
+                                                <td class="sum">$549.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hotel"><i class="far fa-calendar-alt"></i> Marriot, Singapo..</td>
+                                                <td class="sum">$1,649.99</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="total"><span>$3,677.98</span></p>
+                    </div>
+
+                    <div class="accordion accordion-flush" id="accordionSummaryTours">
+                        <div class="accordion-item">
+                            <div class="titleLine accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseOne" id="flush-headingFive">
+                                <i class="fas fa-map-marked-alt"></i>
+                                <p>Tours</p>
+                                <i class="fas fa-pen or_circle"></i>
+                            </div>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionSummaryTours">
+                                <div class="accordion-body">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="hotel"> <i class="far fa-calendar-alt"></i>Marriot, Paris</td>
+                                                <td class="sum">$1,677.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hotel"><i class="far fa-calendar-alt"></i> Interconti.., Rome</td>
+                                                <td class="sum">$560.99</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hotel"><i class="far fa-calendar-alt"></i> Accor, Madrid</td>
+                                                <td class="sum">$549.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hotel"><i class="far fa-calendar-alt"></i> Marriot, Singapo..</td>
+                                                <td class="sum">$1,649.99</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="total"><span>$3,677.98</span></p>
+                    </div>
+                    <table class="table totalTable">
+                        <tbody>
+                            <tr>
+                                <td>NET Total</td>
+                                <td class="sum">$1,677.00</td>
+                            </tr>
+                            <tr>
+                                <td>SUBTotal</td>
+                                <td class="sum">$560.99</td>
+                            </tr>
+                            <tr>
+                                <td>MERCHANT fees</td>
+                                <td class="sum">$549.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="Grandtotal">Grand total<span>$3,677.98</span></p>
+                    <div class="sumBtnBox">
+                        <button class="gray_btn">preview</button>
+                        <button class="purple_btn">Confirm</button>
+                        <button class="inh_btn"> Save</button>
+                        <button class="inh_btn"> email</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="modal fade" id="summaryModal" tabindex="-1" aria-labelledby="summuryModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body summaryBox">
+                    <h1>Summary<i class="fas fa-times or_circle" data-bs-dismiss="modal" aria-label="Close"></i></h1>
+                    <div class="accordion accordion-flush" id="Accommodation">
+                        <div class="accordion-item">
+                            <div class="titleLine accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseOne" id="flush-headingSix">
+                                <i class="fas fa-bed"></i>
+                                <p>Accommodation</p>
+                            </div>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#Accommodation">
+                                <div class="accordion-body">
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td class="date"> <i class="far fa-calendar-alt"></i>10 Jun - 14 Jun, 2020</td>
+                                                <td class="hotel">Paris Marriott Rive Gauche Hotel & Conference Center</td>
+                                                <td class="sum">$1,677.00</td>
+                                                <td> <i class="fas fa-pen or_circle"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="date"> <i class="far fa-calendar-alt"></i>10 Jun - 14 Jun, 2020</td>
+                                                <td class="hotel">Interconti.., Rome</td>
+                                                <td class="sum">$560.99</td>
+                                                <td> <i class="fas fa-pen or_circle"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="date"> <i class="far fa-calendar-alt"></i>10 Jun - 14 Jun, 2020</td>
+                                                <td class="hotel">Accor, Madrid</td>
+                                                <td class="sum">$549.00</td>
+                                                <td> <i class="fas fa-pen or_circle"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="date"> <i class="far fa-calendar-alt"></i>10 Jun - 14 Jun, 2020</td>
+                                                <td class="hotel">Marriot, Singapoor</td>
+                                                <td class="sum">$1,649.99</td>
+                                                <td> <i class="fas fa-pen or_circle"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="totalBox">
+                            <p class="disc">5% Discount included: <span>Save $457.43</span><i class="fas fa-pen or_circle"></i></p>
+                            <p class="total">TOTAL <span>$3,677.98</span></p>
+                        </div>
+
+                    </div>
+                    <div class="accordion accordion-flush" id="Flights">
+                        <div class="accordion-item">
+                            <div class="titleLine accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseOne" id="flush-headingSeven">
+                                <i class="fas fa-plane"></i>
+                                <p>Flights</p>
+                            </div>
+                            <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#Flights">
+                                <div class="accordion-body">
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td class="date"> <i class="far fa-calendar-alt"></i>10 Jun - 14 Jun, 2020</td>
+                                                <td class="hotel">Paris Marriott Rive Gauche Hotel & Conference Center</td>
+                                                <td class="sum">$1,677.00</td>
+                                                <td> <i class="fas fa-pen or_circle"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="date"> <i class="far fa-calendar-alt"></i>10 Jun - 14 Jun, 2020</td>
+                                                <td class="hotel">Interconti.., Rome</td>
+                                                <td class="sum">$560.99</td>
+                                                <td> <i class="fas fa-pen or_circle"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="date"> <i class="far fa-calendar-alt"></i>10 Jun - 14 Jun, 2020</td>
+                                                <td class="hotel">Accor, Madrid</td>
+                                                <td class="sum">$549.00</td>
+                                                <td> <i class="fas fa-pen or_circle"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="date"> <i class="far fa-calendar-alt"></i>10 Jun - 14 Jun, 2020</td>
+                                                <td class="hotel">Marriot, Singapoor</td>
+                                                <td class="sum">$1,649.99</td>
+                                                <td> <i class="fas fa-pen or_circle"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="totalBox">
+                            <p class="disc">5% Discount included: <span>Save $457.43</span><i class="fas fa-pen or_circle"></i></p>
+                            <p class="total">TOTAL <span>$3,677.98</span></p>
+                        </div>
+                    </div>
+                    <div class="accordion accordion-flush" id="Transfers">
+                        <div class="accordion-item">
+                            <div class="titleLine accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseOne" id="flush-headingEight">
+                                <i class="fas fa-exchange-alt"></i>
+                                <p>transfers</p>
+                            </div>
+                            <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#Transfers">
+                                <div class="accordion-body">
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td class="date"> <i class="far fa-calendar-alt"></i>10 Jun - 14 Jun, 2020</td>
+                                                <td class="hotel">Paris Marriott Rive Gauche Hotel & Conference Center</td>
+                                                <td class="sum">$1,677.00</td>
+                                                <td> <i class="fas fa-pen or_circle"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="date"> <i class="far fa-calendar-alt"></i>10 Jun - 14 Jun, 2020</td>
+                                                <td class="hotel">Interconti.., Rome</td>
+                                                <td class="sum">$560.99</td>
+                                                <td> <i class="fas fa-pen or_circle"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="date"> <i class="far fa-calendar-alt"></i>10 Jun - 14 Jun, 2020</td>
+                                                <td class="hotel">Accor, Madrid</td>
+                                                <td class="sum">$549.00</td>
+                                                <td> <i class="fas fa-pen or_circle"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="date"> <i class="far fa-calendar-alt"></i>10 Jun - 14 Jun, 2020</td>
+                                                <td class="hotel">Marriot, Singapoor</td>
+                                                <td class="sum">$1,649.99</td>
+                                                <td> <i class="fas fa-pen or_circle"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="totalBox">
+                            <p class="disc">5% Discount included: <span>Save $457.43</span><i class="fas fa-pen or_circle"></i></p>
+                            <p class="total">TOTAL <span>$3,677.98</span></p>
+                        </div>
+                    </div>
+                    <div class="accordion accordion-flush" id="Activities">
+                        <div class="accordion-item">
+                            <div class="titleLine accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseOne" id="flush-headingNine">
+                                <i class="fas fa-hiking"></i>
+                                <p>Activities</p>
+                            </div>
+                            <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#Activities">
+                                <div class="accordion-body">
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td class="date"> <i class="far fa-calendar-alt"></i>10 Jun - 14 Jun, 2020</td>
+                                                <td class="hotel">Paris Marriott Rive Gauche Hotel & Conference Center</td>
+                                                <td class="sum">$1,677.00</td>
+                                                <td> <i class="fas fa-pen or_circle"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="date"> <i class="far fa-calendar-alt"></i>10 Jun - 14 Jun, 2020</td>
+                                                <td class="hotel">Interconti.., Rome</td>
+                                                <td class="sum">$560.99</td>
+                                                <td> <i class="fas fa-pen or_circle"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="date"> <i class="far fa-calendar-alt"></i>10 Jun - 14 Jun, 2020</td>
+                                                <td class="hotel">Accor, Madrid</td>
+                                                <td class="sum">$549.00</td>
+                                                <td> <i class="fas fa-pen or_circle"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="date"> <i class="far fa-calendar-alt"></i>10 Jun - 14 Jun, 2020</td>
+                                                <td class="hotel">Marriot, Singapoor</td>
+                                                <td class="sum">$1,649.99</td>
+                                                <td> <i class="fas fa-pen or_circle"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="totalBox">
+                            <p class="disc">5% Discount included: <span>Save $457.43</span><i class="fas fa-pen or_circle"></i></p>
+                            <p class="total">TOTAL <span>$3,677.98</span></p>
+                        </div>
+                    </div>
+
+                    <div class="accordion accordion-flush" id="Tours">
+                        <div class="accordion-item">
+                            <div class="titleLine accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseOne" id="flush-headingTen">
+                                <i class="fas fa-map-marked-alt"></i>
+                                <p>Tours</p>
+                            </div>
+                            <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#Tours">
+                                <div class="accordion-body">
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td class="date"> <i class="far fa-calendar-alt"></i>10 Jun - 14 Jun, 2020</td>
+                                                <td class="hotel">Paris Marriott Rive Gauche Hotel & Conference Center</td>
+                                                <td class="sum">$1,677.00</td>
+                                                <td> <i class="fas fa-pen or_circle"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="date"> <i class="far fa-calendar-alt"></i>10 Jun - 14 Jun, 2020</td>
+                                                <td class="hotel">Interconti.., Rome</td>
+                                                <td class="sum">$560.99</td>
+                                                <td> <i class="fas fa-pen or_circle"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="date"> <i class="far fa-calendar-alt"></i>10 Jun - 14 Jun, 2020</td>
+                                                <td class="hotel">Accor, Madrid</td>
+                                                <td class="sum">$549.00</td>
+                                                <td> <i class="fas fa-pen or_circle"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="date"> <i class="far fa-calendar-alt"></i>10 Jun - 14 Jun, 2020</td>
+                                                <td class="hotel">Marriot, Singapoor</td>
+                                                <td class="sum">$1,649.99</td>
+                                                <td> <i class="fas fa-pen or_circle"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="totalBox">
+                            <p class="disc">5% Discount included: <span>Save $457.43</span><i class="fas fa-pen or_circle"></i></p>
+                            <p class="total">TOTAL <span>$3,677.98</span></p>
+                        </div>
+                    </div>
+                    <table class="table totalTable">
+                        <tbody>
+                            <tr>
+                                <td>NET Total</td>
+                                <td class="sum">$1,677.00</td>
+                            </tr>
+                            <tr>
+                                <td>SUBTotal</td>
+                                <td class="sum">$560.99</td>
+                            </tr>
+                            <tr>
+                                <td>MERCHANT fees</td>
+                                <td class="sum">$549.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="Grandtotal">Grand total<span>$3,677.98</span></p>
+                    <div class="sumBtnBox">
+                        <div>
+                            <button class="gray_btn">preview</button>
+                            <button class="purple_btn">Confirm</button>
+                        </div>
+                        <div>
+                            <button class="inh_btn"> Save</button>
+                            <button class="inh_btn"> email</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="tripCreateModal" tabindex="-1" aria-labelledby="tripCreateModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link accommodation" id="accommodation-tab" data-bs-toggle="tab" href="#accommodation" role="tab" aria-controls="accommodation" aria-selected="false"><i class="fa fa-bed" aria-hidden="true"></i> Accommodation</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link flights" id="flights-tab" data-bs-toggle="tab" href="#flights" role="tab" aria-controls="flights" aria-selected="false"><i class="fa fa-plane" aria-hidden="true"></i> flights</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link transfers" id="transfers-tab" data-bs-toggle="tab" href="#transfers" role="tab" aria-controls="transfers" aria-selected="false"><i class="fas fa-exchange-alt"></i> transfers</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link cruise" id="cruise-tab" data-bs-toggle="tab" href="#cruise" role="tab" aria-controls="cruise" aria-selected="false"><i class="fas fa-anchor"></i> cruise</a>
+                        </li>
+                        <li class="nav-item " role="presentation">
+                            <a class="nav-link activity" id="activity-tab" data-bs-toggle="tab" href="#activity" role="tab" aria-controls="activity" aria-selected="false"><i class="fas fa-hiking"></i> activity</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link tour" id="tour-tab" data-bs-toggle="tab" href="#tour" role="tab" aria-controls="tour" aria-selected="false"><i class="fas fa-map-marked-alt"></i> tour</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link extras" id="extras-tab" data-bs-toggle="tab" href="#extras" role="tab" aria-controls="extras" aria-selected="false"><i class="fas fa-plus-square"></i> extras</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link documents" id="documents-tab" data-bs-toggle="tab" href="#documents" role="tab" aria-controls="documents" aria-selected="false"><i class="fas fa-passport"></i> documents</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-body">
+                    <!--active show-->
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade" id="accommodation" role="tabpanel" aria-labelledby="accommodation-tab">
+                        </div>
+                        <div class="tab-pane fade" id="flights" role="tabpanel" aria-labelledby="flights-tab">flights</div>
+                        <div class="tab-pane fade" id="transfers" role="tabpanel" aria-labelledby="transfers-tab">transfers</div>
+                        <div class="tab-pane fade" id="cruise" role="tabpanel" aria-labelledby="cruise-tab">cruise</div>
+                        <div class="tab-pane fade" id="activity" role="tabpanel" aria-labelledby="activity-tab">
+
+                            <div class="line">
+                                <p class="sub">Sub-category</p>
+                                <button class="gray_btn"><i class="fas fa-hiking"></i> Activity</button>
+                                <button class="white_btn"><i class="fas fa-utensils"></i> Food/Drink</button>
+                            </div>
+                            <div class="line">
+                                <p class="sub">Name</p>
+                                <div class="margLeft">
+                                    <input type="text" placeholder="Name of activity here...">
+                                </div>
+                            </div>
+                            <div class="line">
+                                <p class="sub">Notes</p>
+                                <form method="post">
+                                    <textarea id="summernote" name="editordata"></textarea>
+                                </form>
+                            </div>
+                            <div class="line">
+                                <p class="sub">Details</p>
+                                <div class="margLeft">
+                                    <div class="mb-3">
+                                        <label for="booked" class="form-label">Booked with</label>
+                                        <input type="text" class="form-control-plaintext" id="booked" placeholder="e.g. Expedia">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="Confirmation" class="form-label">Confirmation #</label>
+                                        <input type="text" class="form-control-plaintext" id="Confirmation" placeholder="e.g. Expedia">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="Company" class="form-label">Company</label>
+                                        <input type="text" class="form-control-plaintext" id="Company" placeholder="e.g. Expedia">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <p class="sub">Time</p>
+                                <div class="margLeft">
+                                    <div class="mb-3">
+                                        <label for="startDate" class="form-label">Start date & time</label>
+                                        <div class='datePicker'>
+                                            <i class="far fa-calendar-alt"></i>
+                                            <input type='text' class="form-control" id='datetimepickerStart' placeholder="16:00, Tues 3-Jun-20" />
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="finishDate" class="form-label">Finish date & time</label>
+                                        <div class='datePicker'>
+                                            <i class="far fa-calendar-alt"></i>
+                                            <input type='text' class="form-control" id='datetimepickerFinish' placeholder="16:00, Tues 5-Jun-20" />
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="timezone" class="form-label">Timezone</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="1" selected>Australian Eastern Standard</option>
+                                            <option value="2">Australian Eastern Standard</option>
+                                            <option value="3">Australian Eastern Standard</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <p class="sub">Details</p>
+                                <div class="margLeft">
+                                    <div class="mb-3">
+                                        <label for="grossAmount" class="form-label">Gross Amount</label>
+                                        <input type="text" class="form-control-plaintext" id="grossAmount" placeholder="$00.00">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="amount" class="form-label">NET Amount</label>
+                                        <input type="text" class="form-control-plaintext" id="amount" placeholder="$00.00">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="Curency" class="form-label">Curency</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="1" selected>Australian Dollar (AUD)</option>
+                                            <option value="2">Australian Dollar (AUD)</option>
+                                            <option value="3">Australian Dollar (AUD)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <p class="sub">Guests</p>
+                                <div class="margLeft">
+                                    <label class="checkBox">All guests
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkBox">Specific Guests Only
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <p class="sub">Images/Video</p>
+                                <div class="upload uploadImage">
+                                    <input class="upload__input" type="file" multiple accept="image/*, video/*" min="1" max="5" />
+                                    <button class="gray_btn">Media library</button>
+                                    <div class="upload__files">
+                                    </div>
+                                </div>
+                                <span class="max">Maximum
+                                    5 images/video</span>
+                            </div>
+                            <div class="line">
+                                <p class="sub">Attachments</p>
+                                <div class="upload uploadText">
+                                    <input class="upload__input" type="file" multiple accept=".pdf" />
+                                    <button class="gray_btn">Media library</button>
+                                    <div class="upload__files2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tour" role="tabpanel" aria-labelledby="tour-tab">tour</div>
+                        <div class="tab-pane fade" id="extras" role="tabpanel" aria-labelledby="extras-tab">extras</div>
+                        <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="documents-tab">documents</div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div>
+                        <button class="gray_btn">SAVE TO LIBRARY</button>
+
+                    </div>
+                    <div>
+                        <button class="inh_btn" data-bs-dismiss="modal"> cancel</button>
+                        <button class="purple_btn">CREATE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js" type="text/javascript"></script>
+    <script src="datepiker/bootstrap-datetimepicker.min.js"></script>
+
+    <script type="text/javascript" src="create_itinerary_script/datepickerStart.js"></script>
+    <script src="create_itinerary_script/modalCreate.js"></script>
+
+
+    <script src="summernote-0.8.18-dist/summernote-bs4.min.js"></script>
+    <script src="create_itinerary_script/summernote.js"></script>
+
+
+
+
+</body>
+
+</html>

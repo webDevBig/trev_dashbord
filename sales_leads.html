@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="datepiker/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.18.1/dist/bootstrap-table.min.css">
+
+
+    <link rel="stylesheet" href="sales_leads_style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="salesLeadsBox">
+            <div class="header_box">
+                <div class="rowBox">
+                    <div class="mb-3">
+                        <label for="search" class="form-label">Search</label>
+                        <input type="text" class="form-control" id="search" placeholder="Start Typing...">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Action</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Choose</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Created</label>
+                        <div class='datePicker'>
+                            <input type='text' class="form-control" id='datetimepickerStart' placeholder="Enter Date" />
+                        </div>
+                    </div>
+                </div>
+                <div class="rowBox">
+                    <button class="inh_btn" data-bs-dismiss="modal"> Create</button>
+                    <button class="purple_btn">Search</button>
+                </div>
+            </div>
+
+            <table class="table table-striped" data-toggle="table" data-pagination="true" data-pagination-loop="false" data-pagination-detail="false">
+                <thead>
+                    <tr>
+                        <th scope="col" style="font-weight: 400"></th>
+                        <th scope="col" style="font-weight: 400" data-sortable="true" data-field="name">Name</th>
+                        <th scope="col" style="font-weight: 400" data-sortable="true" data-field="created">Created</th>
+                        <th scope="col" style="font-weight: 400" data-sortable="true" data-field="email">Email</th>
+                        <th scope="col" style="font-weight: 400" data-sortable="true" data-field="phone">Phone Number</th>
+                        <th scope="col" style="font-weight: 400" data-sortable="true" data-field="operator">Operator</th>
+                        <th scope="col" style="font-weight: 400">Associated Company</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                        <td data-field="name">
+                            <div>
+                                <div class="userImg">MT</div>Melissa Thomas
+                                <button class="preview" data-bs-toggle="modal" data-bs-target="#modalAllUserInfo">Preview</button>
+                            </div>
+                        </td>
+                        <td data-field="created">10-Jun-2020</td>
+                        <td data-field="email">mt@example.com.au</td>
+                        <td data-field="phone">+6140 000 000</td>
+                        <td data-field="operator"><select class="form-select" aria-label="Default select example">
+                                <option selected>Unassigned</option>
+                                <option value="1">Ebony Tarrant</option>
+                                <option value="2">Joe Smith</option>
+                                <option value="3">Tayla Gunning</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option selected>Unassigned</option>
+                                <option value="1">Ebony Tarrant</option>
+                                <option value="2">Joe Smith</option>
+                                <option value="3">Tayla Gunning</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                        <td data-field="name">
+                            <div>
+                                <div class="userImg">AT</div>Aelissa Thomas
+                                <button class="preview" data-bs-toggle="modal" data-bs-target="#modalAllUserInfo">Preview</button>
+                            </div>
+                        </td>
+                        <td data-field="created">10-Jun-2020</td>
+                        <td data-field="email">mt@example.com.au</td>
+                        <td data-field="phone">+6140 000 000</td>
+                        <td data-field="operator"><select class="form-select" aria-label="Default select example">
+                                <option selected>Unassigned</option>
+                                <option value="1">Ebony Tarrant</option>
+                                <option value="2">Joe Smith</option>
+                                <option value="3">Tayla Gunning</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option selected>Unassigned</option>
+                                <option value="1">Ebony Tarrant</option>
+                                <option value="2">Joe Smith</option>
+                                <option value="3">Tayla Gunning</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                        <td data-field="name">
+                            <div>
+                                <div class="userImg">AT</div>Aelissa Thomas
+                                <button class="preview" data-bs-toggle="modal" data-bs-target="#modalAllUserInfo">Preview</button>
+                            </div>
+                        </td>
+                        <td data-field="created">10-Jun-2020</td>
+                        <td data-field="email">mt@example.com.au</td>
+                        <td data-field="phone">+6140 000 000</td>
+                        <td data-field="operator"><select class="form-select" aria-label="Default select example">
+                                <option selected>Unassigned</option>
+                                <option value="1">Ebony Tarrant</option>
+                                <option value="2">Joe Smith</option>
+                                <option value="3">Tayla Gunning</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option selected>Unassigned</option>
+                                <option value="1">Ebony Tarrant</option>
+                                <option value="2">Joe Smith</option>
+                                <option value="3">Tayla Gunning</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                        <td data-field="name">
+                            <div>
+                                <div class="userImg">AT</div>Aelissa Thomas
+                                <button class="preview" data-bs-toggle="modal" data-bs-target="#modalAllUserInfo">Preview</button>
+                            </div>
+                        </td>
+                        <td data-field="created">10-Jun-2020</td>
+                        <td data-field="email">mt@example.com.au</td>
+                        <td data-field="phone">+6140 000 000</td>
+                        <td data-field="operator"><select class="form-select" aria-label="Default select example">
+                                <option selected>Unassigned</option>
+                                <option value="1">Ebony Tarrant</option>
+                                <option value="2">Joe Smith</option>
+                                <option value="3">Tayla Gunning</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option selected>Unassigned</option>
+                                <option value="1">Ebony Tarrant</option>
+                                <option value="2">Joe Smith</option>
+                                <option value="3">Tayla Gunning</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                        <td data-field="name">
+                            <div>
+                                <div class="userImg">AT</div>Aelissa Thomas
+                                <button class="preview" data-bs-toggle="modal" data-bs-target="#modalAllUserInfo">Preview</button>
+                            </div>
+                        </td>
+                        <td data-field="created">10-Jun-2020</td>
+                        <td data-field="email">mt@example.com.au</td>
+                        <td data-field="phone">+6140 000 000</td>
+                        <td data-field="operator"><select class="form-select" aria-label="Default select example">
+                                <option selected>Unassigned</option>
+                                <option value="1">Ebony Tarrant</option>
+                                <option value="2">Joe Smith</option>
+                                <option value="3">Tayla Gunning</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option selected>Unassigned</option>
+                                <option value="1">Ebony Tarrant</option>
+                                <option value="2">Joe Smith</option>
+                                <option value="3">Tayla Gunning</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                        <td data-field="name">
+                            <div>
+                                <div class="userImg">AT</div>Aelissa Thomas
+                                <button class="preview" data-bs-toggle="modal" data-bs-target="#modalAllUserInfo">Preview</button>
+                            </div>
+                        </td>
+                        <td data-field="created">10-Jun-2020</td>
+                        <td data-field="email">mt@example.com.au</td>
+                        <td data-field="phone">+6140 000 000</td>
+                        <td data-field="operator"><select class="form-select" aria-label="Default select example">
+                                <option selected>Unassigned</option>
+                                <option value="1">Ebony Tarrant</option>
+                                <option value="2">Joe Smith</option>
+                                <option value="3">Tayla Gunning</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option selected>Unassigned</option>
+                                <option value="1">Ebony Tarrant</option>
+                                <option value="2">Joe Smith</option>
+                                <option value="3">Tayla Gunning</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                        <td data-field="name">
+                            <div>
+                                <div class="userImg">AT</div>Aelissa Thomas
+                                <button class="preview" data-bs-toggle="modal" data-bs-target="#modalAllUserInfo">Preview</button>
+                            </div>
+                        </td>
+                        <td data-field="created">10-Jun-2020</td>
+                        <td data-field="email">mt@example.com.au</td>
+                        <td data-field="phone">+6140 000 000</td>
+                        <td data-field="operator"><select class="form-select" aria-label="Default select example">
+                                <option selected>Unassigned</option>
+                                <option value="1">Ebony Tarrant</option>
+                                <option value="2">Joe Smith</option>
+                                <option value="3">Tayla Gunning</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option selected>Unassigned</option>
+                                <option value="1">Ebony Tarrant</option>
+                                <option value="2">Joe Smith</option>
+                                <option value="3">Tayla Gunning</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                        <td data-field="name">
+                            <div>
+                                <div class="userImg">AT</div>Aelissa Thomas
+                                <button class="preview" data-bs-toggle="modal" data-bs-target="#modalAllUserInfo">Preview</button>
+                            </div>
+                        </td>
+                        <td data-field="created">10-Jun-2020</td>
+                        <td data-field="email">mt@example.com.au</td>
+                        <td data-field="phone">+6140 000 000</td>
+                        <td data-field="operator"><select class="form-select" aria-label="Default select example">
+                                <option selected>Unassigned</option>
+                                <option value="1">Ebony Tarrant</option>
+                                <option value="2">Joe Smith</option>
+                                <option value="3">Tayla Gunning</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option selected>Unassigned</option>
+                                <option value="1">Ebony Tarrant</option>
+                                <option value="2">Joe Smith</option>
+                                <option value="3">Tayla Gunning</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                        <td data-field="name">
+                            <div>
+                                <div class="userImg">AT</div>Aelissa Thomas
+                                <button class="preview" data-bs-toggle="modal" data-bs-target="#modalAllUserInfo">Preview</button>
+                            </div>
+                        </td>
+                        <td data-field="created">10-Jun-2020</td>
+                        <td data-field="email">mt@example.com.au</td>
+                        <td data-field="phone">+6140 000 000</td>
+                        <td data-field="operator"><select class="form-select" aria-label="Default select example">
+                                <option selected>Unassigned</option>
+                                <option value="1">Ebony Tarrant</option>
+                                <option value="2">Joe Smith</option>
+                                <option value="3">Tayla Gunning</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option selected>Unassigned</option>
+                                <option value="1">Ebony Tarrant</option>
+                                <option value="2">Joe Smith</option>
+                                <option value="3">Tayla Gunning</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                        <td data-field="name">
+                            <div>
+                                <div class="userImg">AT</div>Aelissa Thomas
+                                <button class="preview" data-bs-toggle="modal" data-bs-target="#modalAllUserInfo">Preview</button>
+                            </div>
+                        </td>
+                        <td data-field="created">10-Jun-2020</td>
+                        <td data-field="email">mt@example.com.au</td>
+                        <td data-field="phone">+6140 000 000</td>
+                        <td data-field="operator"><select class="form-select" aria-label="Default select example">
+                                <option selected>Unassigned</option>
+                                <option value="1">Ebony Tarrant</option>
+                                <option value="2">Joe Smith</option>
+                                <option value="3">Tayla Gunning</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option selected>Unassigned</option>
+                                <option value="1">Ebony Tarrant</option>
+                                <option value="2">Joe Smith</option>
+                                <option value="3">Tayla Gunning</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                        <td data-field="name">
+                            <div>
+                                <div class="userImg">AT</div>Aelissa Thomas
+                                <button class="preview" data-bs-toggle="modal" data-bs-target="#modalAllUserInfo">Preview</button>
+                            </div>
+                        </td>
+                        <td data-field="created">10-Jun-2020</td>
+                        <td data-field="email">mt@example.com.au</td>
+                        <td data-field="phone">+6140 000 000</td>
+                        <td data-field="operator"><select class="form-select" aria-label="Default select example">
+                                <option selected>Unassigned</option>
+                                <option value="1">Ebony Tarrant</option>
+                                <option value="2">Joe Smith</option>
+                                <option value="3">Tayla Gunning</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option selected>Unassigned</option>
+                                <option value="1">Ebony Tarrant</option>
+                                <option value="2">Joe Smith</option>
+                                <option value="3">Tayla Gunning</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                        <td data-field="name">
+                            <div>
+                                <div class="userImg">AT</div>Aelissa Thomas
+                                <button class="preview" data-bs-toggle="modal" data-bs-target="#modalAllUserInfo">Preview</button>
+                            </div>
+                        </td>
+                        <td data-field="created">10-Jun-2020</td>
+                        <td data-field="email">mt@example.com.au</td>
+                        <td data-field="phone">+6140 000 000</td>
+                        <td data-field="operator"><select class="form-select" aria-label="Default select example">
+                                <option selected>Unassigned</option>
+                                <option value="1">Ebony Tarrant</option>
+                                <option value="2">Joe Smith</option>
+                                <option value="3">Tayla Gunning</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option selected>Unassigned</option>
+                                <option value="1">Ebony Tarrant</option>
+                                <option value="2">Joe Smith</option>
+                                <option value="3">Tayla Gunning</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                        <td data-field="name">
+                            <div>
+                                <div class="userImg">AT</div>Aelissa Thomas
+                                <button class="preview" data-bs-toggle="modal" data-bs-target="#modalAllUserInfo">Preview</button>
+                            </div>
+                        </td>
+                        <td data-field="created">10-Jun-2020</td>
+                        <td data-field="email">mt@example.com.au</td>
+                        <td data-field="phone">+6140 000 000</td>
+                        <td data-field="operator"><select class="form-select" aria-label="Default select example">
+                                <option selected>Unassigned</option>
+                                <option value="1">Ebony Tarrant</option>
+                                <option value="2">Joe Smith</option>
+                                <option value="3">Tayla Gunning</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option selected>Unassigned</option>
+                                <option value="1">Ebony Tarrant</option>
+                                <option value="2">Joe Smith</option>
+                                <option value="3">Tayla Gunning</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                        <td data-field="name">
+                            <div>
+                                <div class="userImg">AT</div>Aelissa Thomas
+                                <button class="preview" data-bs-toggle="modal" data-bs-target="#modalAllUserInfo">Preview</button>
+                            </div>
+                        </td>
+                        <td data-field="created">10-Jun-2020</td>
+                        <td data-field="email">mt@example.com.au</td>
+                        <td data-field="phone">+6140 000 000</td>
+                        <td data-field="operator"><select class="form-select" aria-label="Default select example">
+                                <option selected>Unassigned</option>
+                                <option value="1">Ebony Tarrant</option>
+                                <option value="2">Joe Smith</option>
+                                <option value="3">Tayla Gunning</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option selected>Unassigned</option>
+                                <option value="1">Ebony Tarrant</option>
+                                <option value="2">Joe Smith</option>
+                                <option value="3">Tayla Gunning</option>
+                            </select></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalAllUserInfo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body summaryBox">
+                    <div class="header_box"><i class="fas fa-times or_circle" data-bs-dismiss="modal" aria-label="Close"></i></div>
+                    <div class="nameBox">
+                        <div class="userImg">MT</div>
+                        <p>Melissa</p>
+                        <p>Thomas<i class="fas fa-pen or_circle"></i></p>
+                    </div>
+                    <div class="accordion accordion-flush" id="Accommodation">
+                        <div class="accordion-item">
+                            <div class="titleLine accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseOne" id="flush-headingSix">
+                                <p>About this contact</p><i class="fas fa-pen or_circle"></i>
+                            </div>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#Accommodation">
+                                <div class="accordion-body">
+                                    <div class="info">
+                                        <span>First Name</span>
+                                        <p>Stephanie</p>
+                                    </div>
+                                    <div class="info">
+                                        <span>Surname</span>
+                                        <p>Stephanie</p>
+                                    </div>
+                                    <div class="info">
+                                        <span>Email</span>
+                                        <p>Stephanie</p>
+                                    </div>
+                                    <div class="info">
+                                        <span>Phone number</span>
+                                        <p>Stephanie</p>
+                                    </div>
+                                    <div class="info">
+                                        <span>Address</span>
+                                        <p>Unit 206, 25 Smith Street, Smithian Building,<br>
+                                            Southport, Queensland, Australia 4215</p>
+                                    </div>
+                                    <div class="info">
+                                        <span>Lead Status</span>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Unassigned</option>
+                                            <option value="1">Ebony Tarrant</option>
+                                            <option value="2">Joe Smith</option>
+                                            <option value="3">Tayla Gunning</option>
+                                        </select>
+                                    </div>
+                                    <div class="info">
+                                        <span>Lead Created</span>
+                                        <p>10-Jun-2020</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion accordion-flush" id="Flights">
+                        <div class="accordion-item">
+                            <div class="titleLine accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseOne" id="flush-headingSeven">
+                                <p>Itineraries</p>
+                            </div>
+                            <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#Flights">
+                                <div class="accordion-body">
+                                    Content
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion accordion-flush" id="Transfers">
+                        <div class="accordion-item">
+                            <div class="titleLine accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseOne" id="flush-headingEight">
+                                <p>Membership Purchases</p>
+                            </div>
+                            <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#Transfers">
+                                <div class="accordion-body"> Content
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sumBtnBox">
+                        <button class="inh_btn"> Delete</button>
+                        <button class="purple_btn">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js" type="text/javascript"></script>
+    <script src="datepiker/bootstrap-datetimepicker.min.js"></script>
+
+    <script src="https://unpkg.com/bootstrap-table@1.18.1/dist/bootstrap-table.min.js"></script>
+    <script src="table.js"></script>
+
+
+    <script>
+        $(function() {
+            $('#datetimepickerStart').datetimepicker({
+                dayViewHeaderFormat: 'MMMM YYYY',
+                format: "ddd d MMM YY ",
+            });
+        });
+        
+
+    </script>
+</body>
+
+</html>
